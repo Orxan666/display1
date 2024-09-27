@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+.boxes {
+  background-color: grey;
+  width: 80%;
+  margin: 10px auto;
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap; */
+  /* X-oxu uzre hereket  */
+  /* justify-content: flex-start;default */
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* ------------- */
+  /* Y-oxu uzre hereket */
+  /* align-items: flex-start; */
+  /* align-items: center; */
+  /* align-items: flex-end; */
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column-reverse; */
+
+
+/* } */
+
+#recent{
+    padding: 30px 0;
+}
+#recent .top-text{
+    text-align: center;padding: 20px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#recent .top-text h6{
+    color: orange;
+}
+
+#recent .boxes{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#recent .boxes .box .color-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    background-color: rgba(45, 180, 135, 0.666);
+}
+#recent .boxes .box{
+    width: 50%;
+    position: relative;
+    transform: scale(1);
+    transition: 0.5s;
+}
+#recent .boxes .box:hover{
+    transform: scale(0.9);
+}
+#recent .boxes .box img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+#recent .boxes .box .box-text{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    z-index: 5;
+}
+#recent .boxes .box:hover .color-box{
+    opacity: 1;
+    visibility: visible;
+}
