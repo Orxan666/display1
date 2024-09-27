@@ -28,6 +28,15 @@
 
 
 /* } */
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.d-flex{
+display: flex;
+flex-wrap: wrap;
+}
 
 #recent{
     padding: 30px 0;
@@ -81,4 +90,26 @@
 #recent .boxes .box:hover .color-box{
     opacity: 1;
     visibility: visible;
+}
+#services{
+    padding: 4rem 0;
+}
+#services .top-text{
+    text-align: center;
+}
+#services .boxes .box{
+    width: 30%;
+    margin: 15px;
+    text-align: center;
+
+
+}
+#services .boxes .box .ico-shop {
+    font-size: 35px;
+    background-color: orange;
+    padding: 20px 23px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    color: white;
 }
